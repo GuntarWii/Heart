@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+}
+
+img{
+    
+}
+
+.container{
+    margin-top: 250px;
+}
+.heart{
+
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    transform: rotate(-45deg);
+    margin: auto;
+}
+
+.heart::before,
+.heart::after{
+content: "";
+background-color: red;
+height: 30px;
+width: 30px;
+border-radius: 50%;
+position: absolute;
+}
+
+.heart::before{
+top: -130px;
+left: 0;
+height: 250px;
+width: 250px;
+}
+
+.heart::after{
+    right: -130px;
+    height: 250px;
+    width: 250px;
+}
